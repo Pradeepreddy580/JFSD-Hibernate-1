@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name='skill6.EmployeeDetails' table='EmployeeDetails'>
+		<id name='EmpId' column='EMPID'>
+			<generator class="org.hibernate.id.enhanced.SequenceStyleGenerator">
+			    <param name="optimizer">none</param>
+			    <param name="increment_size">1</param>
+			    <param name="sequence_name">EmpIdSeq</param>
+			</generator>
+		</id>
+		<property name='Ename' column='Ename'/>
+		<property name='Dept' column='Dept'/>
+		<property name='Age' column='Age'/>
+		<property name='Salary' column='Salary'/>
+	</class>
+</hibernate-mapping>
